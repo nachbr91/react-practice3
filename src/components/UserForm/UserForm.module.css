@@ -1,0 +1,25 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin: 3rem auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.5rem 1rem;
+}
+
+.user-form label {
+  font-weight: bold;
+}
+
+.user-form input {
+  border: 1px solid #ccc;
+  margin: 0.4rem 0;
+  height: 1.4rem;
+}
+
+.user-form input:focus {
+  outline: none;
+  border-color: rgb(70, 1, 81);
+}
