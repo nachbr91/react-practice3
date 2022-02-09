@@ -17,10 +17,21 @@ const UserForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault()
+
+    if (enteredUsername.trim().length === 0 || enteredAge.length === 0) {
+      setEnteredUsername('')
+      setEnteredAge('')
+      return
+    } else if (enteredAge < 0) {
+      setEnteredAge('')
+      return
+    }
+
     const userData = {
       username: enteredUsername,
       age: enteredAge,
     }
+
     props.onSaveUserData(userData)
     setEnteredUsername('')
     setEnteredAge('')
