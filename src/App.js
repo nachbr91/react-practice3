@@ -5,18 +5,20 @@ import UserList from './components/UserList/UserList'
 
 function App() {
   const [userData, setUserData] = useState([])
+  const [isUserList, setIsUserList] = useState(false)
 
   const addUserData = (data) => {
     setUserData((prevData) => {
       return [data, ...prevData]
     })
+    setIsUserList(true)
   }
 
   return (
-    <div>
+    <>
       <UserForm onSaveUserData={addUserData} />
-      <UserList items={userData} />
-    </div>
+      {isUserList && <UserList items={userData} />}
+    </>
   )
 }
 
