@@ -1,0 +1,25 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 0%;
+  width: 550px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.user-list ul {
+  padding: 0;
+}
+
+.user-list li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 0 5px;
+  width: 510px;
+  height: 1.8rem;
+}

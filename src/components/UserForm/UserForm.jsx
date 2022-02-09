@@ -28,9 +28,13 @@ const UserForm = (props) => {
   return (
     <form className={styles['user-form']} onSubmit={submitHandler}>
       <label>Username</label>
-      <input type="text" onChange={usernameChangeHandler} />
+      <input
+        type="text"
+        value={enteredUsername}
+        onChange={usernameChangeHandler}
+      />
       <label>Age (Years)</label>
-      <input type="number" onChange={ageChangeHandler} />
+      <input type="number" value={enteredAge} onChange={ageChangeHandler} />
       <button type="submit">Add User</button>
     </form>
   )
