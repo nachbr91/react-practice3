@@ -9,7 +9,7 @@ const App = () => {
 
   const addUserData = (data) => {
     setUserData((prevData) => {
-      return [data, ...prevData]
+      return [...prevData, data]
     })
     setIsUserList(true)
   }
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <UserForm onSaveUserData={addUserData} />
-      {isUserList && <UserList items={userData} />}
+      {isUserList && <UserList users={userData} />}
     </>
   )
 }
