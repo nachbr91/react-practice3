@@ -1,7 +1,8 @@
 .user-form {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 90%;
+  max-width: 40rem;
   margin: 3rem auto 2rem auto;
   border: 1px solid black;
   border-radius: 0.5rem;
