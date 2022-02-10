@@ -28,7 +28,7 @@ const UserForm = (props) => {
     } else if (enteredAge < 0) {
       setError({
         title: 'Invalid age',
-        message: 'Please enter a valid age (>0)',
+        message: 'Please enter a valid age (>=0)',
       })
       return
     }
